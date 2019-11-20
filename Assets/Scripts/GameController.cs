@@ -49,6 +49,12 @@ public class GameController : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            // QUIT THE GAME
+            Application.Quit();
+        }
     }
 
     // Coroutine to spawn waves of hazards
